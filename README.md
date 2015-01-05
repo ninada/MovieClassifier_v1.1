@@ -18,7 +18,6 @@ Contents
 "Agent Classy" is a movie Classifying programme written using Java based on KNN (K - Nearest Neighbour ) algorithm
 
 2. How it Works
-
 ----------------
 initially we get a plot.list from ,contains thousands of movie plots in one text file and genres.list ,contains each movie name and its genres from IMDB Website.from these two files we extracted each movie plot into separate text files contains in a folder named as its Genre  which it belongs more than other genres.then we created separate text files for each movie Genre (as action.txt,comedy.txt....) which include all movie plots in each genre folder.  
 from those text files we have created the file "dtmfor5Gen.csv" by using a R Script ( using R data mininng  Language ).it contains a Document Term Matrix ( DTM ) which contains WordCount in columns and Genres in Rows. in here we basically use 5 genres ; Action, Comedy , Romance, Sport, Music.
