@@ -49,7 +49,7 @@ public class MainFrame extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
 
-        fileChooser.setCurrentDirectory(new java.io.File("C:\\Users"));
+        fileChooser.setCurrentDirectory(new java.io.File("C:\\Users\\Thilanka\\Desktop"));
         fileChooser.setDialogTitle("Open Plot");
         fileChooser.setFileFilter(new MyCustomFilter());
 
@@ -173,7 +173,7 @@ public class MainFrame extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    String path =  "C:\\Users\\Thilanka\\IdeaProjects\\MovieClassifier\\", plot = null;
+    String path =  "C:\\Users\\Thilanka\\IdeaProjects\\mClassy\\", plot = null;
     private void btn_uploadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_uploadActionPerformed
         int returnVal = fileChooser.showOpenDialog(this);
         if (returnVal == JFileChooser.APPROVE_OPTION) {
@@ -205,6 +205,17 @@ public class MainFrame extends javax.swing.JFrame {
         else {
             PrintWriter out;
             try {
+                // if testPlot.txt not exist it is created
+                if( !(checkExist.isFileExists( "testPlot" )) ) {
+                    try {
+                        File f = new File("testPlot.txt");
+                        f.createNewFile();
+                    }
+                    catch(IOException e){
+                        System.out.println("File not created");
+                    }
+                }
+
                 out = new PrintWriter(path + "testPlot.txt");
                 out.println(plot);
                 out.close();
