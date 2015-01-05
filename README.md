@@ -24,7 +24,7 @@ initially we get a plot.list from ,contains thousands of movie plots in one text
 from those text files we have created the file "dtmfor5Gen.csv" by using a R Script ( using R data mininng  Language ).it contains a Document Term Matrix ( DTM ) which contains WordCount in columns and Genres in Rows. in here we basically use 5 genres ; Action, Comedy , Romance, Sport, Music.
 then Agent Classy calculate a distance called "Euclidean distance" for the new movie plot entered by user to each movie genre.by selecting genres ,have least distances we select the genres the movie should goes to.for that purpose we calculate distances as a percentage of total 5 distances and selects genres which have less than 20% .
 
-3. how to Run
+3. How to Run
 -------------
 
 you can clone this project into your IDE easily.and then you shoul do some changes to mainFrame.java file.change String variable "Path" into your current directory where the location of the project.based on the IDE it may be different.in netbeans it is the directory of SRC folder and in IntelliJ Idea it is the directory of project folder.thats All. 
