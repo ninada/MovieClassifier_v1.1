@@ -27,7 +27,9 @@ then Agent Classy calculate a distance called "Euclidean distance" for the new m
 3. how to Run
 -------------
 
-you can clone this project into your IDE easily.and then you shoul do some changes to mainFrame.java file.change String variable "Path" into your current directory where the location of the project.based on the IDE it may be different.in netbeans it is the directory of SRC folder and in IntelliJ Idea it is the directory of project folder.thats All. finally Run the programme and enjoy.
+you can clone this project into your IDE easily.and then you shoul do some changes to mainFrame.java file.change String variable "Path" into your current directory where the location of the project.based on the IDE it may be different.in netbeans it is the directory of SRC folder and in IntelliJ Idea it is the directory of project folder.thats All. 
+you can upload a text file by clicking Upload Plot button or you can directly copy and paste the plot into text area.
+finally Run the programme and enjoy.
 
 4. Conclutions
 --------------
